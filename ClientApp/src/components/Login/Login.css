@@ -1,0 +1,31 @@
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    
+    
+}
+.input{
+    padding: 5px 12px;
+    border-radius: 3px;
+    border: 1px solid silver;
+}
+
+.input:focus{
+    border : 3px solid blue
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
