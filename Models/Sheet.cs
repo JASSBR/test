@@ -5,23 +5,17 @@
 
         public int Id { get; set; }
 
-        public int Length { get; set; }
+        public double Length { get; set; }
 
-        public int Width { get; set; }
+        public double Width { get; set; }
 
-        public int JobId { get; set; }
-        public List<Lines> Polylines { get; set; }
+        public int? JobId { get; set; }
+        public List<Lines>? Polylines { get; set; }
 
-        public Job Job { get; set; }
+        public Job? Job { get; set; }
 
-        public List<Circle> Circles { get; set; }
+        public List<Circle>? Circles { get; set; }
 
-
-
-
-
-
-
-
+        
     }
 }

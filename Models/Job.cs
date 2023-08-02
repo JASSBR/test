@@ -9,8 +9,8 @@
 
         public int ProjectId { get; set; }
 
-        public Project Project { get; set; }
+        public Project? Project { get; set; }
 
-        public List<Sheet> Sheets { get; set; }
+        public List<Sheet>? Sheets { get; set; }
     }
 }

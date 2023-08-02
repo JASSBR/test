@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Plugins;
 using test.Data;
 using test.Models;
 
@@ -94,6 +95,19 @@ namespace test.Controllers
             _context.SaveChanges();
 
             return NoContent();
+        }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] User request)
+        {
+            var user = _context.Users.FirstOrDefault(u => u.Name == request.Name && u.Password == request.Password);
+
+            if (user == null)
+            {
+                return Unauthorized();
+            }
+            
+            return Ok(new { UserId = user.Id });
         }
 
     }

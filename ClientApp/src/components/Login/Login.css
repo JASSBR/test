@@ -12,6 +12,15 @@
     
     
 }
+
+.logo{
+    background-color: violet;
+    border-radius: 50%;
+    width: fit-content;
+    padding: 10px;
+   text-align: center;
+   margin-left: 140px;
+}
 .input{
     padding: 5px 12px;
     border-radius: 3px;
@@ -26,6 +35,52 @@
     position: absolute;
     top: 50%;
     right: 10px;
-    transform: translateY(-50%);
     cursor: pointer;
+  }
+
+  .password-input {
+    position: relative;
+  }
+  
+  .password-input input {
+    padding-right: 150px;
+    margin-top: 14px;
+  }
+
+  .button{
+    background-color:#0066c0 ;
+    color:#fff;
+    margin-top: 10px;
+    padding: 7px 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  .title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .Label{
+    background-color: #fff;
+    position: absolute;
+    font-size: 14px;
+    color: silver;
+    transform: translateY(70px) translateX(10px);
+    
+  }
+  .passwordLabel{
+  background-color: #fff;
+    position: absolute;
+    z-index: 100;
+    font-size: 14px;
+    color: silver;
+    transform: translateY(115px) translateX(10px);
+    
+  }
+  .others{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    cursor: pointer;
+    color: #0066c0;
+    margin-top: 5px;
   }

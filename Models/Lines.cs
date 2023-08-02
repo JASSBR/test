@@ -7,6 +7,6 @@
 
         public double xPosition { get; set; }
         public double yPosition { get; set; }
-        public int Bluge { get; set; }
+        public int? Bluge { get; set; }
     }
 }

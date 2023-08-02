@@ -1,0 +1,15 @@
+.snackbar{
+    position: absolute;
+    padding: 10px 50px;
+    background-color: greenyellow;
+    top: 5px;
+    right: 5px;
+    border-radius: 5px;
+}
+.close{
+    position: absolute;
+    right: 3px;
+    top:-5px;
+    font-size: 18px;
+    cursor: pointer;
+}
